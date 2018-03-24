@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/london2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/london2"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Server Archtecture "
+            android:textColor="#909"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            android:layout_marginBottom="40dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#900"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am a server"
+                android:textColor="#fff"
+                android:layout_marginLeft="40dp"/>
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/swIsServer"
+                android:layout_marginRight="60dp"
+                android:textColorHint="#fff"
+                android:textOn="Server"
+                android:textOff="Client"
+
+                android:textColor="#900"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etIp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#3b4148"
+            android:hint="IP Address"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#5e6266" />
+
+
+
+        <EditText
+            android:id="@+id/etPo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#3b4148"
+            android:hint="Port"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#5e6266" />
+
+
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btConnect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ea4c88"
+            android:text="Connect"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+</LinearLayout>
